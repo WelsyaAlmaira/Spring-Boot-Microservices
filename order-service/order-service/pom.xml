@@ -105,6 +105,11 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.flywaydb</groupId>
+				<artifactId>flyway-maven-plugin</artifactId>
+				<version>10.20.1</version> <!-- or the latest version -->
+			</plugin>
 		</plugins>
 	</build>
 
