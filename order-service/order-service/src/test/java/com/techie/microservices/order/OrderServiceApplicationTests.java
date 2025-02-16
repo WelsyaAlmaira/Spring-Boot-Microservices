@@ -18,6 +18,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 @AutoConfigureWireMock(port = 0)
 class OrderServiceApplicationTests {
 
+    @SuppressWarnings("rawtypes") // ditambahkan untuk menghilangkan warning
     @ServiceConnection
     static MySQLContainer mySQLContainer = new MySQLContainer("mysql:8.3.0");
     @LocalServerPort
